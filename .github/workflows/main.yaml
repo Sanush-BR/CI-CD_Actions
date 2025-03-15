@@ -25,4 +25,4 @@ jobs:
       run: docker build -t my-node-app:latest .
 
     - name: Push Docker image to Docker Hub
-      run: docker push ${{secrets.DOCKER_USER}}/my-node-app:latest
+      run: docker push my-node-app:latest
